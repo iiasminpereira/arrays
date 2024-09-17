@@ -1,0 +1,25 @@
+let inventario = [
+    { nome: 'celular', preco: 2500, emEstoque: true },
+    { nome: 'computador', preco: 3700, emEstoque: true },
+    { nome: 'tv', preco: 2600, emEstoque: true }
+    { nome: 'tablet', preco: 2000, emEstoque: true },
+    { nome: 'fone de ouvido', preco: 1000, emEstoque: false },
+    { nome: 'aiped', preco: 3200, emEstoque: true }
+    { nome: 'alexia', preco: 3800, emEstoque: false },
+    { nome: 'mouse', preco: 700, emEstoque: true },
+    { nome: 'pen drive', preco: 200, emEstoque: true }
+    { nome: 'camera fotografica', preco: 5000, emEstoque: true },
+    { nome: 'caixa de som jbl', preco: 1000, emEstoque: false },
+    { nome: 'controle ' , preco: 2100, emEstoque: true }
+    { nome: 'drone', preco: 4000, emEstoque: true },
+    { nome: 'x-box', preco: 4600, emEstoque: false },
+    { nome: 'vr box ' , preco: 5100, emEstoque: true }
+];
+
+for (let i = 0; i < inventario.length; i++) {
+    if (inventario[i].emEstoque) {
+    console.log(inventario[i].nome + ' está em estoque.');
+    }
+    }
+    let produtosEmEstoque = inventario.filter(produto => produto.emEstoque);
+console.log(produtosEmEstoque);
